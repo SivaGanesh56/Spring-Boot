@@ -1,15 +1,18 @@
 <html>
 
 <head>
-<title>First Web Application</title>
+<title>Login Page</title>
 </head>
 
 <body>
     <font color="red">${msg}</font>
+    <h2><b>Enter Credintals to login </b></h2>
 	<form method="post">
-		Name :    <input type="text" name="name" />
+		<b style="color:#ff0066">Name:</b>
+		<br>  <input type="text" name="name" />
 		<br>
-		Password :  <input type="password" name="password" />
+		<b style="color:#ff0066">Password:</b> <br>
+		<input type="password" name="password" />
 		<br>
 		<input type="submit" />
 	</form>

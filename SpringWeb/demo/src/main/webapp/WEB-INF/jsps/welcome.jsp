@@ -1,13 +1,12 @@
 <html>
 
 <head>
-<title>First Web Application</title>
+<title>Welcome ToDo</title>
 </head>
 
 <body>
-	Welcome ${name}!! Your Password is ${pass}
-	<br>
-	Please Dont Share it with anyone
+	<h3> Welcome <b style="color:#cc3300;"> ${name}!!</b></h3>
+	<a href="/list-todos"> Click here </a> to view List of todos
 </body>
 
 </html>
