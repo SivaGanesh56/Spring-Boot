@@ -2,8 +2,6 @@ package com.springboot.demo.controller;
 
 import com.springboot.demo.model.Todo;
 import com.springboot.demo.service.TodoService;
-import com.sun.org.apache.regexp.internal.RE;
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -24,7 +22,7 @@ public class TodoController
     @RequestMapping(value = "/list-todos",method = RequestMethod.GET)
     public String listTodos(ModelMap modelMap) {
         String name = (String) modelMap.get("name");
-        System.out.println(name);
+        System.out.println("----------->>>>>>>>________________>>>>>>>>>>>>>"+name);
         modelMap.put("todos", todoService.reteriveUserByUser(name));
         return "list-todos";
     }

@@ -27,7 +27,7 @@ public class TodoService
     public List<Todo> reteriveUserByUser(String user)
     {
         List<Todo> filterTodos = new ArrayList<>();
-        Iterator<Todo> itr =todos.listIterator();
+        Iterator<Todo> itr =todos.iterator();
         while(itr.hasNext())
         {
             Todo todo = itr.next();
